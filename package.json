@@ -1,0 +1,44 @@
+{
+  "name": "@stianlarsen/meteors",
+  "version": "1.0.0",
+  "description": "A dynamic and customizable React component for rendering realistic meteor animations on any container. Supports light and dark modes, and allows configuration for speed, size, and the number of meteors.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "!src/**",
+    "dist",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stianlars1/meteors.git"
+  },
+  "keywords": [
+    "react",
+    "meteors",
+    "animations",
+    "typescript",
+    "stianlarsen"
+  ],
+  "author": "Stian Larsen <stian.larsen@mac.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stianlars1/meteors/issues"
+  },
+  "homepage": "https://github.com/stianlars1/meteors#readme",
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  }
+}
