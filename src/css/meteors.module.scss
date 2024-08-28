@@ -1,34 +1,76 @@
-.borderBeam {
+.container {
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  border: calc(var(--border-width)) solid transparent;
-  border-radius: inherit;
+  overflow: hidden;
+  inset: 2px;
+}
 
-  mask-clip: padding-box, border-box !important;
-  mask-composite: intersect !important;
-  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+.meteor {
+  position: absolute;
+  background: transparent;
+  height: 1px;
+  border-radius: 1px;
+  opacity: 0.7;
+  animation: fall-right linear infinite;
+  z-index: 0;
+  position: relative;
+  background-image: linear-gradient(
+    to left,
+    var(--meteor-color, currentColor),
+    rgba(255, 255, 255, 0)
+  );
 
-  &::after {
+  &:before {
     content: "";
     position: absolute;
-    aspect-ratio: 1 / 1;
-    width: calc(var(--size));
-    background: linear-gradient(
-      to left,
-      var(--color-from),
-      var(--color-to),
-      transparent
-    );
-    offset-anchor: calc(var(--anchor)) 50%;
-    offset-path: rect(0 auto auto 0 round calc(var(--size)));
-    animation: border-beam calc(var(--duration)) infinite linear;
-    animation-delay: var(--delay);
+    width: 1.2px;
+    height: 1.2px;
+    border-radius: 50%;
+    left: 100%;
+    background: var(--meteor-color, currentColor);
+    box-shadow: 0 0 0 0.25px var(--meteor-color, currentColor);
   }
 }
 
-@keyframes border-beam {
+.fall-left {
+  transform-origin: top left;
+  animation: fall-left linear infinite;
+}
+
+.fall-right {
+  transform-origin: top right;
+  animation: fall-right linear infinite;
+}
+
+@keyframes fall-left {
+  0% {
+    transform: translate3d(0, 0, 0) rotateY(180deg) rotateZ(45deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
   100% {
-    offset-distance: 100%;
+    transform: translate3d(-300px, 200px, 0) rotateY(180deg) rotateZ(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-right {
+  0% {
+    transform: translate3d(0, 0, 0) rotateY(180deg) rotateZ(-220deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(150px, 175px, 0) rotateY(180deg) rotateZ(-220deg);
+    opacity: 0;
   }
 }

@@ -15,6 +15,10 @@
       "default": "./dist/index.js"
     }
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc && shx mkdir -p dist/css/  && shx cp src/css/meteors.module.css dist/css/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stianlars1/meteors.git"
@@ -37,8 +41,11 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5.5.4",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "shx": "^0.3.4"
   }
 }
