@@ -1,8 +1,14 @@
 # @stianlarsen/react-fade-effects
 
+[![npm version](https://badge.fury.io/js/%40stianlarsen%2Fmeteors.svg)](https://badge.fury.io/js/%40stianlarsen%2Fmeteors)
+
 A versatile React library for applying various fade-in effects to your UI components. Starting with the `FadeWords` component, this library will grow to include multiple fade-related components, such as fading text, images, children elements, and more.
 
-**Check out the [website](https://your-website-link.com) for demos, examples, and further info.**
+## Preview
+
+![LightBeam Component](https://github.com/Stianlars1/react-light-beam/blob/5422cdc60ae7ab6b52d644d452646bec7212f76f/lightBeam.png)
+
+_A preview of @stianlarsen/meteors_
 
 ## Features
 
