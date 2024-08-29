@@ -8,9 +8,10 @@ A versatile React library for applying various fade-in effects to your UI compon
 
 <video width="600" autoplay loop muted>
   <source src="https://github.com/Stianlars1/meteors/raw/cfb5a83c7efa64f948d8ee75773a4e8c6864a7f8/meteors.mp4" type="video/mp4">
-    <img src="https://raw.githubusercontent.com/Stianlars1/borderBeam/15c85e33676a198ea0b0d89f433c3afb52ca7285/borderbeam.png" alt="Fallback Image">
+    <img src="https://raw.githubusercontent.com/Stianlars1/meteors/cc112d09184dd19809f9c4c40ef80daeddb6c165/meteors.png" alt="Fallback Image">
   Your browser does not support the video tag.
 </video>
+
 _A preview of @stianlarsen/meteors_
 
 ## Features
