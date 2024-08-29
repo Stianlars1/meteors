@@ -1,8 +1,8 @@
-# @stianlarsen/react-fade-effects
+# @stianlarsen/meteors
 
 [![npm version](https://badge.fury.io/js/%40stianlarsen%2Fmeteors.svg)](https://badge.fury.io/js/%40stianlarsen%2Fmeteors)
 
-A versatile React library for applying various fade-in effects to your UI components. Starting with the `FadeWords` component, this library will grow to include multiple fade-related components, such as fading text, images, children elements, and more.
+A dynamic and customizable React component for rendering realistic meteor animations on any container. Perfect for adding a unique and mesmerizing effect to your web applications.
 
 ## Preview
 
@@ -16,75 +16,77 @@ _A preview of @stianlarsen/meteors_
 
 ## Features
 
-- **Smooth Fade Animations**: Easily create engaging fade-in effects for different types of UI elements.
-- **Highly Configurable**: Adjust the animation's duration, delay, stagger time, and more to match your design needs.
-- **Ease of Integration**: Drop the components into your project and customize them with minimal setup.
-- **Built with TypeScript**: Ensures type safety and a better development experience.
+- **Realistic Meteor Animations**: Simulate meteors shooting across the screen with customizable speed, size, and quantity.
+- **Dynamic and Configurable**: Easily adjust the component’s behavior to suit your project, including options for light and dark modes, and custom colors.
+- **Ease of Integration**: Drop the component into any container, and it will automatically adapt to the container's dimensions.
+- **SCSS Modules**: Styled with SCSS modules, making it straightforward to integrate and customize within your existing project.
 
 ## Installation
 
 Install the package using npm:
 
 ```bash
-npm install @stianlarsen/react-fade-effects
+npm install @stianlarsen/meteors
 ```
 
 Or using yarn:
 
 ```bash
-yarn add @stianlarsen/react-fade-effects
+yarn add @stianlarsen/meteors
 ```
 
 ## Usage
 
-### FadeWords Component
+### Meteors Component
 
-The `FadeWords` component allows you to create smooth fade-in effects for text.
-
-#### Example
+Import and use the Meteors component in your React project:
 
 ```jsx
-import { FadeWords } from "@stianlarsen/react-fade-effects";
+import Meteors from "@stianlarsen/meteors";
 
 function App() {
   return (
-    <FadeWords
-      words="Effortless Task Management with TaskBuddy"
-      duration={1}
-      delay={0.2}
-      variant="up"
-      scaleSize={1.05}
-    />
+    <div style={{ position: "relative", width: "300px", height: "300px" }}>
+      <Meteors
+        speed={2}
+        size={50}
+        amount={20}
+        colorLightmode="black"
+        colorDarkmode="white"
+        fallingSide="right"
+      />
+    </div>
   );
 }
 ```
 
-#### `FadeWords` Component Props
+## `Meteors` Component Props
 
-The `FadeWords` component accepts several props to customize its behavior and appearance:
+The `Meteors` component accepts several props to customize its behavior and appearance:
 
-| Prop              | Type       | Description                                                                                             |
-| ----------------- | ---------- | ------------------------------------------------------------------------------------------------------- | ------ | ------ | -------- | ------------------------------------------------------ |
-| `words`           | `string`   | The text to be displayed with the fade effect.                                                          |
-| `className`       | `string`   | Additional CSS classes to apply to the component.                                                       |
-| `filter`          | `boolean`  | Apply a blur filter during the animation. Defaults to `true`.                                           |
-| `duration`        | `number`   | Duration of the animation in seconds. Defaults to `1`.                                                  |
-| `staggerTime`     | `number`   | Time in seconds to stagger the animation between words. Defaults to `0.1`.                              |
-| `delay`           | `number`   | Delay before the animation starts in seconds. Defaults to `0.2`.                                        |
-| `variant`         | `"default" | "up"                                                                                                    | "down" | "left" | "right"` | The direction of the animation. Defaults to `default`. |
-| `scaleSize`       | `number`   | Scale size for the words during the animation. Defaults to `1`.                                         |
-| `once`            | `boolean`  | Whether the animation should occur only once. Defaults to `true`.                                       |
-| `translateAmount` | `number`   | Custom translate value for the animation. Defaults to `15` for `up`/`down` and `15` for `left`/`right`. |
+| Prop             | Type     | Description                                                                          |
+| ---------------- | -------- | ------------------------------------------------------------------------------------ |
+| `speed`          | `number` | The speed of the meteors' fall. Defaults to `1`.                                     |
+| `size`           | `number` | The size of the meteors. Defaults to `50`.                                           |
+| `amount`         | `number` | The number of meteors. Defaults to `20`.                                             |
+| `fallingSide`    | `string` | Determines the direction of the meteor fall (`left` or `right`). Defaults to `left`. |
+| `colorLightmode` | `string` | The color of the meteors in light mode. Defaults to `"rgba(0, 0, 0, 1)"`.            |
+| `colorDarkmode`  | `string` | The color of the meteors in dark mode. Defaults to `"rgba(255, 255, 255, 1)"`.       |
 
-## Future Components
+### Example of Customizing Meteor Behavior
 
-This package is designed to expand with additional fade components, such as:
+Here is how you can customize the meteors' behavior using the available props:
 
-- **FadeChildren**: Apply fade-in effects to child elements within a container.
-- **FadeImages**: Animate image elements with fade effects.
-- **FadeContainers**: Apply fades to entire sections or containers.
-
-Each future component will come with its own set of customizable props, following the same flexible design as `FadeWords`.
+```jsx
+<Meteors
+  speed={3}
+  size={30}
+  amount={10}
+  colorLightmode="blue"
+  colorDarkmode="yellow"
+  fallingSide="left"
+/>
+```
 
 ## Contributing
 
@@ -92,7 +94,7 @@ Contributions are always welcome! Please feel free to open issues or submit pull
 
 ## License
 
-`@stianlarsen/react-fade-effects` is [MIT licensed](./LICENSE).
+`@stianlarsen/meteors` is [MIT licensed](./LICENSE).
 
 ## Contact
 
