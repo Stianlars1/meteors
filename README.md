@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/%40stianlarsen%2Fmeteors.svg)](https://badge.fury.io/js/%40stianlarsen%2Fmeteors)
 
+[![npm version](https://badge.fury.io/js/@stianlarsen%2Fmeteors.svg)](https://badge.fury.io/js/@stianlarsen%2Fmeteors)
+
 A dynamic and customizable React component for rendering realistic meteor animations on any container. Perfect for adding a unique and mesmerizing effect to your web applications.
 
 ## Preview
