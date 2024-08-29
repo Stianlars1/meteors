@@ -6,8 +6,10 @@ A versatile React library for applying various fade-in effects to your UI compon
 
 ## Preview
 
-![LightBeam Component](https://github.com/Stianlars1/react-light-beam/blob/5422cdc60ae7ab6b52d644d452646bec7212f76f/lightBeam.png)
-
+<video width="600" controls>
+  <source src="https://github.com/Stianlars1/meteors/raw/cfb5a83c7efa64f948d8ee75773a4e8c6864a7f8/meteors.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 _A preview of @stianlarsen/meteors_
 
 ## Features
