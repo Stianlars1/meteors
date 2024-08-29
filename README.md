@@ -6,7 +6,7 @@ A versatile React library for applying various fade-in effects to your UI compon
 
 ## Preview
 
-<video width="600" controls>
+<video width="600" autoplay loop muted>
   <source src="https://github.com/Stianlars1/meteors/raw/cfb5a83c7efa64f948d8ee75773a4e8c6864a7f8/meteors.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
