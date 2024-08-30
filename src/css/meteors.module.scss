@@ -2,11 +2,15 @@
   position: absolute;
   overflow: hidden;
   inset: 2px;
+  pointer-events: none;
+  user-select: none;
 }
 
 .meteor {
   position: absolute;
   background: transparent;
+  pointer-events: none;
+  user-select: none;
   height: 1px;
   border-radius: 1px;
   opacity: 0.7;
