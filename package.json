@@ -1,6 +1,6 @@
 {
   "name": "@stianlarsen/meteors",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A dynamic and customizable React component for rendering realistic meteor animations on any container. Supports light and dark modes, and allows configuration for speed, size, and the number of meteors.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
