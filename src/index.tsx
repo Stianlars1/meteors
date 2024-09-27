@@ -51,7 +51,6 @@ export const Meteors: React.FC<MeteorProps> = ({
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-    console.log("isDarkmodeActive 2", isDarkmodeActive);
     if (isDarkmodeActive) {
       container.style.setProperty(
         "--meteor-color",

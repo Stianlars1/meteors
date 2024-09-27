@@ -63,7 +63,6 @@ const Meteors = ({ speed = 1, size = 50, amount = 20, fallingSide = "left", colo
         const container = containerRef.current;
         if (!container)
             return;
-        console.log("isDarkmodeActive 2", isDarkmodeActive);
         if (isDarkmodeActive) {
             container.style.setProperty("--meteor-color", `${colorDarkmode ? colorDarkmode : "rgba(255, 255, 255, 1)"}`);
         }
