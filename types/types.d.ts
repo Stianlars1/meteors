@@ -5,4 +5,6 @@ export interface MeteorProps {
   fallingSide?: "left" | "right";
   colorLightmode?: string;
   colorDarkmode?: string;
+  style?: React.CSSProperties;
+  className?: string;
 }

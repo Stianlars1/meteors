@@ -10,6 +10,8 @@ export const Meteors: React.FC<MeteorProps> = ({
   fallingSide = "left",
   colorLightmode = undefined,
   colorDarkmode = undefined,
+  style,
+  className = "",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { isDarkmodeActive } = useIsDarkmodeActive();
@@ -64,5 +66,11 @@ export const Meteors: React.FC<MeteorProps> = ({
     }
   }, [isDarkmodeActive]);
 
-  return <div ref={containerRef} className={styles.container}></div>;
+  return (
+    <div
+      style={style}
+      ref={containerRef}
+      className={`${styles.container} ${className}`}
+    />
+  );
 };

@@ -30,7 +30,7 @@ exports.Meteors = void 0;
 const react_1 = __importStar(require("react"));
 const meteors_module_css_1 = __importDefault(require("./css/meteors.module.css"));
 const hooks_1 = require("./hooks");
-const Meteors = ({ speed = 1, size = 50, amount = 20, fallingSide = "left", colorLightmode = undefined, colorDarkmode = undefined, }) => {
+const Meteors = ({ speed = 1, size = 50, amount = 20, fallingSide = "left", colorLightmode = undefined, colorDarkmode = undefined, style, className = "", }) => {
     const containerRef = (0, react_1.useRef)(null);
     const { isDarkmodeActive } = (0, hooks_1.useIsDarkmodeActive)();
     (0, react_1.useEffect)(() => {
@@ -70,6 +70,6 @@ const Meteors = ({ speed = 1, size = 50, amount = 20, fallingSide = "left", colo
             container.style.setProperty("--meteor-color", `${colorLightmode ? colorLightmode : "rgba(0, 0, 0, 1)"}`);
         }
     }, [isDarkmodeActive]);
-    return react_1.default.createElement("div", { ref: containerRef, className: meteors_module_css_1.default.container });
+    return (react_1.default.createElement("div", { style: style, ref: containerRef, className: `${meteors_module_css_1.default.container} ${className}` }));
 };
 exports.Meteors = Meteors;

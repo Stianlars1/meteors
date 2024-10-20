@@ -64,14 +64,16 @@ function App() {
 
 The `Meteors` component accepts several props to customize its behavior and appearance:
 
-| Prop             | Type     | Description                                                                          |
-| ---------------- | -------- | ------------------------------------------------------------------------------------ |
-| `speed`          | `number` | The speed of the meteors' fall. Defaults to `1`.                                     |
-| `size`           | `number` | The size of the meteors. Defaults to `50`.                                           |
-| `amount`         | `number` | The number of meteors. Defaults to `20`.                                             |
-| `fallingSide`    | `string` | Determines the direction of the meteor fall (`left` or `right`). Defaults to `left`. |
-| `colorLightmode` | `string` | The color of the meteors in light mode. Defaults to `"rgba(0, 0, 0, 1)"`.            |
-| `colorDarkmode`  | `string` | The color of the meteors in dark mode. Defaults to `"rgba(255, 255, 255, 1)"`.       |
+| Prop             | Type          | Description                                                                          |
+| ---------------- | ------------- | ------------------------------------------------------------------------------------ |
+| `speed`          | `number`      | The speed of the meteors' fall. Defaults to `1`.                                     |
+| `size`           | `number`      | The size of the meteors. Defaults to `50`.                                           |
+| `amount`         | `number`      | The number of meteors. Defaults to `20`.                                             |
+| `fallingSide`    | `string`      | Determines the direction of the meteor fall (`left` or `right`). Defaults to `left`. |
+| `colorLightmode` | `string`      | The color of the meteors in light mode. Defaults to `"rgba(0, 0, 0, 1)"`.            |
+| `colorDarkmode`  | `string`      | The color of the meteors in dark mode. Defaults to `"rgba(255, 255, 255, 1)"`.       |
+| `style`          | `CSSProperty` | Add custom styling. Defaults to `undefined`.                                         |
+| `className`      | `string`      | Add classname to the component. Defaults to `undefined`.                             |
 
 ### Example of Customizing Meteor Behavior
 
