@@ -36,17 +36,13 @@
     "url": "https://github.com/stianlars1/meteors/issues"
   },
   "homepage": "https://github.com/stianlars1/meteors#readme",
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18"
-  },
   "peerDependencies": {
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
   },
   "devDependencies": {
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18 || ^19",
+    "@types/react-dom": "^18 || ^19",
     "shx": "^0.3.4",
     "typescript": "^5.5.4"
   }
